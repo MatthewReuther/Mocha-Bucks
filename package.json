@@ -1,5 +1,5 @@
 {
-  "name": "Mocha-Bucks",
+  "name": "MochaBucks",
   "version": "1.0.0",
   "description": "Learning JavaScript with Mocha and Chai",
   "main": "app.js",
@@ -10,16 +10,21 @@
     "mocha": "^2.1.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "npm run lint-json && npm run lint-js && npm run lint-js-style",
+    "lint-json": "jsonlint -q package.json .jscsrc .jshintrc",
+    "lint-js": "jshint .",
+    "lint-js-style": "jscs ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MatthewReuther/Mocha-Bucks.git"
+    "url": "https://github.com/NSS-Cohort-8/MochaBucks.git"
   },
-  "author": "Matthew Reuther matthew.reuther@gmail.com",
+  "author": "Scott <scott@sscotth.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MatthewReuther/Mocha-Bucks/issues"
+    "url": "https://github.com/NSS-Cohort-8/MochaBucks/issues"
   },
-  "homepage": "https://github.com/MatthewReuther/Mocha-Bucks"
+  "homepage": "https://github.com/NSS-Cohort-8/MochaBucks"
 }
+
